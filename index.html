@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciudad de Orión - Inicio </title>
+    <title>Ciudad de Orión - Inicio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <header>
-        <!-- Enlace de accesibilidad: a evaluar si el enlace se mantiene para proximas entregas -->
-        <a href="#contenido-principal">Saltar al contenido principal</a>
-
-        <h1>Ciudad de Orión</h1>
-        <p>De la tradición minera a la metrópolis del nuevo milenio</p>
-        
         <nav aria-label="Navegación principal">
             <ul>
                 <li><a href="index.html" aria-current="page">Inicio</a></li>
@@ -22,6 +22,9 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+
+        <h1>Ciudad de Orión</h1>
+        <p>De la tradición minera a la metrópolis del nuevo milenio</p>
     </header>
 
     <main id="contenido-principal">
@@ -35,10 +38,9 @@
             </p>
             
             <p>
-                <a href="#destacados">Ir directamente a los atractivos destacados de Orión ↓</a>
+                <a href="#destacados" class="btn">Ir directamente a los atractivos destacados de Orión ↓</a>
             </p>
 
-            <!-- Imagenes y texto alternativo pendiente para futuras entregas -->
             <img src="https://picsum.photos/800/400" alt="Vista nocturna de los rascacielos futuristas con formas geométricas e iluminación en la ciudad de Orión">
         </section>
 
@@ -51,10 +53,9 @@
                     Una megaestructura bioclimática que alberga un parque tropical interno. 
                     Un hito de la ingeniería moderna.
                 </p>
-                <!-- Imagen secundaria con alt descriptivo a cambiar en futuras entregas -->
                 <img src="https://picsum.photos/400/250" alt="Estructura cónica gigante de vidrio iluminada desde el interior rodeada de nieve">
                 <p>
-                    <a href="lugares.html">Conocer todos los lugares de interés de Orión</a>
+                    <a href="lugares.html" class="btn">Conocer todos los lugares de interés de Orión</a>
                 </p>
             </article>
 
@@ -65,7 +66,7 @@
                     inteligencia artificial y arte digital más grande de la región.
                 </p>
                 <p>
-                    <a href="ciudad.html">Leer más sobre la historia y transformación de la ciudad</a>
+                    <a href="ciudad.html" class="btn">Leer más sobre la historia y transformación de la ciudad</a>
                 </p>
             </article>
 
@@ -83,10 +84,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Ministerio de Turismo y Desarrollo Urbano de Orión</p>
         <p>
-            <a href="contacto.html">Contactar a la Oficina de Atención al Visitante de Orión</a>
+            <a href="contacto.html" class="btn">Contactar a la Oficina de Atención al Visitante de Orión</a>
         </p>
+        <p>&copy; 2026 Ministerio de Turismo y Desarrollo Urbano de Orión</p>
     </footer>
 
 </body>
