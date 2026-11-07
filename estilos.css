@@ -1,5 +1,5 @@
 /*Kevin CSS*/
-:root {
+/* :root {
   --color-primario: #0d3b66;      
   --color-secundario: #64dfdf;   
   --color-fondo: #f8f9fa;       
@@ -8,7 +8,63 @@
   --color-borde: #cccccc;
   --color-hover: #44c7ff;         
   --fuente-principal: 'Roboto', sans-serif;
+}*/
+/* Paleta alternativa 1 - Neo-futurist utopia */
+
+:root {
+  --color-primario: #56B8F5;      
+  --color-secundario: #A5DDFB;
+  --color-acento: #777BFA;
+  --color-fondo: #E8F7FF;       
+  --color-texto: #2b2d42;      
+  --color-blanco: #ffffff;
+  --color-borde: #cccccc;
+  --color-hover: #D6C8FF;         
+  --fuente-principal: 'Roboto', sans-serif;
 }
+
+/* Paleta alternativa 2 - Cosmic abundance */
+
+/*:root {
+  --color-primario: #354C91;      
+  --color-secundario: #6D83D9;
+  --color-acento: #F6BFEA;
+  --color-fondo: #171F46;       
+  --color-texto: #ffffff;      
+  --color-blanco: #ffffff;
+  --color-borde: #cccccc;
+  --color-hover: #B4A7F7;         
+  --fuente-principal: 'Roboto', sans-serif;
+}*/
+
+/* Paleta alternativa 3 - Cosmic abundance - Deep space edition */
+
+/*:root {
+  --color-primario: #0E2A47;      
+  --color-secundario: #8A6CFF;
+  --color-acento: #F6BFEA;
+  --color-fondo: #536FAF;       
+  --color-texto: #D9E8FF;      
+  --color-blanco: #ffffff;
+  --color-borde: #D9E8FF;
+  --color-hover: #B4A7F7;         
+  --fuente-principal: 'Roboto', sans-serif;
+}*/
+
+/* Paleta alternativa 4 - Quantum Oasis — Dark futuristic edition */
+
+/*:root {
+  --color-primario: #0B0F14;      
+  --color-secundario: #3DF2E0;
+  --color-acento: #22B8A9;
+  --color-fondo: #1C3D46;       
+  --color-texto: #C2FFF5;      
+  --color-blanco: #ffffff;
+  --color-borde: #C2FFF5;
+  --color-hover: #8AF5E8;         
+  --fuente-principal: 'Roboto', sans-serif;
+}*/
+
 
 * {
   box-sizing: border-box;
