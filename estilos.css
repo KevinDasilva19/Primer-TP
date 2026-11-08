@@ -1,5 +1,5 @@
 /*Kevin CSS*/
-/* :root {
+:root {
   --color-primario: #0d3b66;      
   --color-secundario: #64dfdf;   
   --color-fondo: #f8f9fa;       
@@ -8,10 +8,10 @@
   --color-borde: #cccccc;
   --color-hover: #44c7ff;         
   --fuente-principal: 'Roboto', sans-serif;
-}*/
+}
 /* Paleta alternativa 1 - Neo-futurist utopia */
 
-:root {
+/*:root {
   --color-primario: #56B8F5;      
   --color-secundario: #A5DDFB;
   --color-acento: #777BFA;
@@ -21,7 +21,7 @@
   --color-borde: #cccccc;
   --color-hover: #D6C8FF;         
   --fuente-principal: 'Roboto', sans-serif;
-}
+}*/
 
 /* Paleta alternativa 2 - Cosmic abundance */
 
@@ -86,6 +86,7 @@ body {
 h1, h2, h3 {
   color: var(--color-primario);
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 h1 {
@@ -291,9 +292,16 @@ section article li:last-child {
   margin-top: 0.5rem;
 }
 
+/* -- Custom bootstrap navbar -- */
 
+.navbar-nav .nav-link,
+.navbar-nav .nav-link.active {
+  color: var(--color-blanco);
+}
 
-
+.navbar-brand {
+  color: var(--color-blanco);
+}
 
 
 
