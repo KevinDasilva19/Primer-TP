@@ -5,59 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Ciudad de Orión</title>
 
+    <!-- CDN de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <!-- Google Fonts: Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Hoja de estilos en la raiz -->
+    <!-- Hoja de estilos css  -->
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <header>
         <h1>Ciudad de Orión</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciudad.html">La Ciudad</a></li>
-                <li><a href="Lugares.html">Lugares</a></li>
-                <li><a href="contactos.html">Contacto</a></li>
-            </ul>
+        
+        <!-- Navbar con menu hamburguesa para telefono -->
+        <nav class="navbar navbar-expand-lg text-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Orión</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ciudad.html">La Ciudad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Lugares.html">Lugares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contactos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
+        <!-- Salto hacia las redes -->
         <p>¿Buscás nuestras redes? Podés <a href="#redes">ir directo a las redes sociales</a>.</p>
 
-        <section>
-            <h2>Centro de Información Turística</h2>
-            <article>
-                <p>
-                    Para consultas y visitas a la ciudad de <strong>Orión</strong>, podés comunicarte con la oficina de atención:
-                </p>
-                <ul>
-                    <li>Dirección: Av. de las Constelaciones 100</li>
-                    <li>Teléfono: <a href="tel:+541155550123">+54 11 5555-0123</a></li>
-                    <li>Email: <a href="mailto:turismo@orion.gob.ar">turismo@orion.gob.ar</a></li>
-                </ul>
-            </article>
-        </section>
+        <!-- Grilla bootstrap: 1 columna en celu y 2 columna en pc -->
+        <div class="row g-4 mt-2">
+            
+            <!-- Columna 1: informacion de atencion -->
+            <section class="col-12 col-md-6">
+                <h2>Centro de Información Turística</h2>
+                <article>
+                    <p>
+                        Para consultas y visitas a la ciudad de <strong>Orión</strong>, podés comunicarte con la oficina de atención:
+                    </p>
+                    <ul>
+                        <li>Dirección: Av. de las Constelaciones 100</li>
+                        <li>Teléfono: <a href="tel:+541155550123">+54 11 5555-0123</a></li>
+                        <li>Email: <a href="mailto:turismo@orion.gob.ar">turismo@orion.gob.ar</a></li>
+                    </ul>
+                </article>
+            </section>
 
-        <aside id="redes">
-            <h2>Redes Sociales</h2>
-            <p>Seguí las novedades de la ciudad:</p>
-            <ul>
-                <li>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram Oficial de Orión</a>
-                </li>
-            </ul>
-            <p><em>Horario de atención: lunes a viernes de 8 a 16 hs.</em></p>
-        </aside>
+            <!-- Columna 2: bloque de redes con id -->
+            <aside id="redes" class="col-12 col-md-6">
+                <h2>Redes Sociales</h2>
+                <p>Seguí las novedades de la ciudad:</p>
+                <ul>
+                    <li>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram Oficial de Orión</a>
+                    </li>
+                </ul>
+                <p><em>Horario de atención: lunes a viernes de 8 a 16 hs.</em></p>
+            </aside>
+
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2026 Municipalidad de Orión</p>
     </footer>
+
+    <!-- Script de bootstrap para que funcione el boton del menu -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
