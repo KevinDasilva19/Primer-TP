@@ -26,9 +26,10 @@ if (formulario) {
     }
 
     // valida que el email ingresado en el campo cumpla con el formato de un mail
-    if (!email.includes("@")) {
+    const partesEmail = email.split("@");
+    if (partesEmail.length !== 2 || partesEmail[0] === "" || !partesEmail[1].includes(".")) {
       cajaFeedback.classList.add("alert", "alert-danger");
-      cajaFeedback.textContent = "Error: ingresá un correo electrónico válido con @.";
+      cajaFeedback.textContent = "Error: ingresá un correo electrónico válido (ej: nombre@dominio.com).";
       return;
     }
 

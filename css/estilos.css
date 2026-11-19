@@ -476,7 +476,35 @@ section article address {
   color: var(--color-primario);
 }
 
+/* -- ajustes de color y contraste para modo oscuro en contactos y lugares -- */
+body.oscuro header h1,
+body.oscuro .navbar-brand,
+body.oscuro .navbar-nav .nav-link,
+body.oscuro .navbar-nav .nav-link.active,
+body.oscuro footer {
+  color: #ffffff;
+}
 
+body.oscuro #btn-modo {
+  background-color: var(--color-secundario);
+  color: #12161f;
+  border-color: var(--color-secundario);
+}
+
+body.oscuro main a,
+body.oscuro #redes li a,
+body.oscuro #form-contacto .form-label {
+  color: var(--color-secundario);
+}
+
+body.oscuro main a:hover,
+body.oscuro #redes li a:hover {
+  color: var(--color-hover);
+}
+
+body.oscuro #redes em {
+  color: var(--color-texto);
+}
 
 
 
