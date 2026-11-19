@@ -9,86 +9,132 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <header>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="index.html" aria-current="page">Inicio</a></li>
-                <li><a href="ciudad.html">Sobre Orión</a></li>
-                <li><a href="lugares.html">Lugares de Interés</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="header-sticky">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-orion" aria-label="Navegación principal">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">Ciudad de Orión</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuOrion" aria-controls="menuOrion" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <h1>Ciudad de Orión</h1>
-        <p>De la tradición minera a la metrópolis del nuevo milenio</p>
+                <div class="collapse navbar-collapse justify-content-end" id="menuOrion">
+                    <ul class="navbar-nav gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ciudad.html">Sobre Orión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lugares.html">Lugares de Interés</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main id="contenido-principal">
 
         <section aria-labelledby="titulo-bienvenida">
-            <h2 id="titulo-bienvenida">La joya futurista impulsada por la energía</h2>
-            <p>
-                Bienvenidos a Orión. Tras décadas de historia industrial y arquitectura monumentalista, el descubrimiento 
-                de vastas reservas de gas natural transformó a nuestra ciudad en el epicentro regional del diseño vanguardista, 
-                la tecnología y la cultura.
-            </p>
-            
-            <p>
-                <a href="#destacados" class="btn">Ir directamente a los atractivos destacados de Orión ↓</a>
-            </p>
+            <div class="hero-contenedor">
+                <img src="img/heroOrion.jfif" alt="Vista nocturna de los rascacielos futuristas con formas geométricas e iluminación en la ciudad de Orión">
+                <div class="hero-texto">
+                    <span class="badge bg-orion-secundario mb-2">Metrópolis del Nuevo Milenio</span>
+                    <h1 id="titulo-bienvenida">Ciudad de Orión</h1>
+                    <p class="mb-0">De la tradición minera a la capital energética y futurista de la región</p>
+                </div>
+            </div>
 
-            <img src="https://picsum.photos/800/400" alt="Vista nocturna de los rascacielos futuristas con formas geométricas e iluminación en la ciudad de Orión">
+            <div class="mt-4">
+                <h2>La joya futurista impulsada por la energía</h2>
+                <p>
+                    Bienvenidos a Orión. Tras décadas de historia industrial y arquitectura monumentalista, el descubrimiento 
+                    de vastas reservas de gas natural transformó a nuestra ciudad en el epicentro regional del diseño vanguardista, 
+                    la tecnología y la cultura.
+                </p>
+                <a href="#destacados" class="btn btn-orion">Ir directamente a los atractivos destacados de Orión ↓</a>
+            </div>
         </section>
 
-        <section id="destacados" aria-labelledby="titulo-destacados">
+        <section id="destacados" class="container px-0" aria-labelledby="titulo-destacados">
             <h2 id="titulo-destacados">Imperdibles de la Ciudad</h2>
 
-            <article>
-                <h3>El Gran Cono de Cristal</h3>
-                <p>
-                    Una megaestructura bioclimática que alberga un parque tropical interno. 
-                    Un hito de la ingeniería moderna.
-                </p>
-                <img src="https://picsum.photos/400/250" alt="Estructura cónica gigante de vidrio iluminada desde el interior rodeada de nieve">
-                <p>
-                    <a href="lugares.html" class="btn">Conocer todos los lugares de interés de Orión</a>
-                </p>
-            </article>
+            <div class="row g-4 mt-1">
+                <div class="col-12 col-md-6">
+                    <article class="card h-100 card-orion">
+                        <img src="img/conoCristal.jfif" class="card-img-top m-0" alt="Estructura cónica gigante de vidrio iluminada desde el interior rodeada de nieve">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-orion-primario">Arquitectura</span>
+                                <span class="badge bg-orion-secundario">Bioclimático</span>
+                            </div>
+                            <h3 class="card-title">El Gran Cono de Cristal</h3>
+                            <p class="card-text">
+                                Una megaestructura bioclimática que alberga un parque tropical interno. 
+                                Un hito de la ingeniería moderna.
+                            </p>
+                            <a href="lugares.html" class="btn btn-orion mt-auto">Conocer todos los lugares de interés</a>
+                        </div>
+                    </article>
+                </div>
 
-            <article>
-                <h3>Distrito Tecnológico</h3>
-                <p>
-                    El antiguo sector de fábricas soviéticas reconvertido en el centro de innovación, 
-                    inteligencia artificial y arte digital más grande de la región.
-                </p>
-                <p>
-                    <a href="ciudad.html" class="btn">Leer más sobre la historia y transformación de la ciudad</a>
-                </p>
-            </article>
-
+                <div class="col-12 col-md-6">
+                    <article class="card h-100 card-orion">
+                        <img src="img/distritoTec.jfif" class="card-img-top m-0" alt="Complejo tecnológico con pantallas digitales y estructuras de acero industrial">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-orion-primario">Innovación</span>
+                                <span class="badge bg-orion-secundario">IA &amp; Arte</span>
+                            </div>
+                            <h3 class="card-title">Distrito Tecnológico</h3>
+                            <p class="card-text">
+                                El antiguo sector de fábricas soviéticas reconvertido en el centro de innovación, 
+                                inteligencia artificial y arte digital más grande de la región.
+                            </p>
+                            <a href="ciudad.html" class="btn btn-orion mt-auto">Leer más sobre la historia de la ciudad</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <section aria-labelledby="titulo-razones">
             <h2 id="titulo-razones">¿Por qué visitar Orión?</h2>
-            <ul>
-                <li><strong>Arquitectura Disruptiva:</strong> Rascacielos dorados, torres con formas geométricas y monumentos gigantescos.</li>
-                <li><strong>Choque Cultural Único:</strong> Tradición nómade, herencia industrial y tecnología de vanguardia en un solo lugar.</li>
-                <li><strong>Infraestructura de Lujo:</strong> Monorriel climatizado y sistemas urbanos automatizados para la máxima comodidad del visitante.</li>
-            </ul>
+            <div class="razones-flex">
+                <div class="razon-item">
+                    <h3>Arquitectura Disruptiva</h3>
+                    <p class="mb-0">Rascacielos dorados, torres con formas geométricas y monumentos gigantescos.</p>
+                </div>
+                <div class="razon-item">
+                    <h3>Choque Cultural Único</h3>
+                    <p class="mb-0">Tradición nómade, herencia industrial y tecnología de vanguardia en un solo lugar.</p>
+                </div>
+                <div class="razon-item">
+                    <h3>Infraestructura de Lujo</h3>
+                    <p class="mb-0">Monorriel climatizado y sistemas urbanos automatizados para la máxima comodidad del visitante.</p>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
         <p>
-            <a href="contacto.html" class="btn">Contactar a la Oficina de Atención al Visitante de Orión</a>
+            <a href="contacto.html" class="btn btn-orion-claro">Contactar a la Oficina de Atención al Visitante de Orión</a>
         </p>
-        <p>&copy; 2026 Ministerio de Turismo y Desarrollo Urbano de Orión</p>
+        <p class="mb-0">&copy; 2026 Ministerio de Turismo y Desarrollo Urbano de Orión</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
