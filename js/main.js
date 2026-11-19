@@ -1,10 +1,3 @@
-// Ciudad
-const btnVerMas = document.querySelector('#btn-ver-mas');
-btnVerMas.addEventListener('click', () => {
-  const collapseElementList = document.querySelectorAll('.collapse')
-  const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
-});
-
 
 const formulario = document.getElementById("form-contacto");
 
