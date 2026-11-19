@@ -318,7 +318,45 @@ footer {
   color: var(--color-blanco);
 }
 
+/* ETAPA 4: MODO OSCURO */
+body.oscuro {
+  --color-fondo: #12161f;
+  --color-blanco: #1c2230;
+  --color-texto: #e2e8f0;
+  --color-borde: #2d3748;
+}
 
+body.oscuro h2,
+body.oscuro h3 {
+  color: var(--color-secundario);
+}
+
+body.oscuro .card-orion {
+  background-color: var(--color-blanco);
+  color: var(--color-texto);
+}
+
+body.oscuro .razon-item {
+  background-color: #161b26;
+}
+
+/* contraste para letras en modo oscuro */
+body.oscuro .navbar-dark .navbar-nav .nav-link,
+body.oscuro .hero-texto,
+body.oscuro .hero-texto h1,
+body.oscuro .hero-texto p,
+body.oscuro .btn-orion-claro,
+body.oscuro .btn-orion,
+body.oscuro footer,
+body.oscuro .navbar-brand.fw-bold,
+body.oscuro .badge.bg-orion-primario {
+  color: #ffffff;
+}
+
+body.oscuro .btn-orion-claro, 
+body.oscuro .bg-orion-secundario {
+  color: #12161f;
+}
 
 
 
