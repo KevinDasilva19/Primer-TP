@@ -363,7 +363,7 @@ body.oscuro .bg-orion-secundario {
 /* --Seccion de contactos, enlaces generales-- */
 main a {
   color: var(--color-primario);
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
