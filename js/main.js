@@ -1,6 +1,6 @@
 const formulario = document.getElementById("form-contacto");
 
-// Esta linea verifica que el formulario exista para que node error
+// esta linea verifica que el formulario exista para que no de error
 if (formulario) {
   const inputNombre = document.getElementById("nombre");
   const inputEmail = document.getElementById("email");
@@ -37,5 +37,21 @@ if (formulario) {
 
     // vacia los campos del formulario
     formulario.reset();
+  });
+}
+
+// filtro en tiempo real en lugares.html
+const buscadorLugares = document.getElementById("buscador-lugares");
+
+if (buscadorLugares) {
+  const tarjetasDestinos = document.querySelectorAll(".destino-item");
+
+  buscadorLugares.addEventListener("input", () => {
+    const textoBuscado = buscadorLugares.value.toLowerCase().trim();
+
+    tarjetasDestinos.forEach((tarjeta) => {
+      const contenido = tarjeta.textContent.toLowerCase();
+      tarjeta.classList.toggle("d-none", !contenido.includes(textoBuscado));
+    });
   });
 }

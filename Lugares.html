@@ -1,102 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Ciudades de Orion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares - Ciudad de Orión</title>
+
+    <!-- cdn de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- fuente roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- hoja de estilos compartida -->
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body>
 
     <header>
-        <h1>Ciudades de Orion</h1>
-        <p>
-            Conocé las principales ciudades y destinos que forman parte de
-            Orion.
-        </p>
+        <h1>Ciudades y Destinos de Orión</h1>
+
+        <!-- navbar con menu hamburguesa para telefono -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Orión</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ciudad.html">La Ciudad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Lugares.html">Lugares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
-
+    <main class="container">
         <section>
-            <h2>Destinos de Orion</h2>
+            <h2>Destinos de Orión</h2>
+            <p>Conocé los principales sectores y localidades turísticas que rodean la región de <strong>Orión</strong>.</p>
 
-            <article>
-                <h3>Samsara</h3>
+            <!-- buscador en tiempo real con js -->
+            <div class="mb-4">
+                <label for="buscador-lugares" class="form-label fw-medium">Buscar destino:</label>
+                <input type="text" id="buscador-lugares" class="form-control" placeholder="Escribí Samsara, Karian, playa, lago...">
+            </div>
 
-                <p>
-                    Samsara es una zona tranquila de la ciudad de Orion,
-                    conocida principalmente por su hermoso lago y sus paisajes
-                    naturales. Es un lugar ideal para vacacionar y alejarse del
-                    ruido y el ritmo de la ciudad, ya que ofrece un ambiente
-                    relajado y diferentes espacios para descansar y disfrutar
-                    de la naturaleza. Además, cuenta con grandes arquitecturas
-                    históricas que se conservan desde hace cientos de años,
-                    convirtiéndola en uno de los lugares más turísticos de
-                    Orion. Sin embargo, sus altos costos hacen que sea un lugar
-                    más elegido para pasar unas vacaciones que para vivir de
-                    forma permanente.
-                </p>
+            <!-- grilla bootstrap: 1 columna en celu, 3 columnas en pc -->
+            <div class="row g-4">
 
-            </article>
+                <!-- destino 1 -->
+                <div class="col-12 col-md-4 destino-item">
+                    <article class="card h-100 card-orion">
+                        <img src="https://picsum.photos/400/250?random=1" class="card-img-top m-0" alt="Lago tranquilo rodeado de naturaleza y arquitectura histórica en Samsara">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-orion-primario">Naturaleza</span>
+                                <span class="badge bg-orion-secundario">Descanso</span>
+                            </div>
+                            <h3 class="card-title">Samsara</h3>
+                            <p class="card-text">
+                                Samsara es una zona tranquila de la ciudad de Orión, conocida principalmente por su hermoso lago y sus paisajes naturales. Es un lugar ideal para vacacionar y alejarse del ruido y el ritmo de la ciudad, ya que ofrece un ambiente relajado y diferentes espacios para descansar y disfrutar de la naturaleza. Además, cuenta con grandes arquitecturas históricas que se conservan desde hace cientos de años, convirtiéndola en uno de los lugares más turísticos de Orión. Sin embargo, sus altos costos hacen que sea un lugar más elegido para pasar unas vacaciones que para vivir de forma permanente.
+                            </p>
+                            <a href="contactos.html" class="btn btn-orion mt-auto">Consultar visita</a>
+                        </div>
+                    </article>
+                </div>
 
+                <!-- destino 2 -->
+                <div class="col-12 col-md-4 destino-item">
+                    <article class="card h-100 card-orion">
+                        <img src="https://picsum.photos/400/250?random=2" class="card-img-top m-0" alt="Rascacielos modernos y avenidas iluminadas en el centro urbano de Karian">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-orion-primario">Urbano</span>
+                                <span class="badge bg-orion-secundario">Cultura &amp; Ocio</span>
+                            </div>
+                            <h3 class="card-title">Karian</h3>
+                            <p class="card-text">
+                                Karian es la ciudad más grande y poblada de Orión, caracterizada por su ambiente urbano y su gran movimiento diario. Cuenta con numerosos edificios de gran altura, avenidas amplias, centros comerciales, restaurantes, hoteles y una gran variedad de negocios. La ciudad también posee importantes espacios culturales, plazas y lugares de entretenimiento que atraen tanto a los habitantes como a turistas. Durante el día sus calles se encuentran llenas de personas y vehículos, mientras que por la noche la ciudad continúa activa gracias a sus restaurantes, bares y diferentes propuestas de ocio. Por su gran cantidad de actividades y lugares para recorrer, Karian es uno de los principales destinos turísticos de Orión y el centro de la vida urbana de la región.
+                            </p>
+                            <a href="contactos.html" class="btn btn-orion mt-auto">Consultar visita</a>
+                        </div>
+                    </article>
+                </div>
 
-            <article>
-                <h3>Karian</h3>
+                <!-- destino 3 -->
+                <div class="col-12 col-md-4 destino-item">
+                    <article class="card h-100 card-orion">
+                        <img src="https://picsum.photos/400/250?random=3" class="card-img-top m-0" alt="Costa con playas de clima templado en la ciudad costera de Pompeia">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-orion-primario">Costa</span>
+                                <span class="badge bg-orion-secundario">Playa</span>
+                            </div>
+                            <h3 class="card-title">Pompeia</h3>
+                            <p class="card-text">
+                                Pompeia es una ciudad costera que cuenta con un clima templado y agradable durante todo el año, aunque mantiene sus distintas estaciones. Durante las temporadas altas se convierte en uno de los destinos más elegidos para vacacionar, haciendo que el turismo aumente considerablemente. Sus hermosas playas atraen a una gran cantidad de visitantes, que durante el día disfrutan del mar y de diferentes actividades al aire libre. Por la noche, la ciudad cobra vida con restaurantes, bares, fiestas y distintas propuestas de entretenimiento. Sin embargo, en determinadas épocas del año aumenta la presencia de vida marina cerca de la costa, por lo que ingresar al agua puede volverse peligroso y es necesario respetar las indicaciones de seguridad. A pesar de esto, Pompeia se destaca como un destino ideal para disfrutar de unas vacaciones con playa, buen clima y mucha actividad.
+                            </p>
+                            <a href="contactos.html" class="btn btn-orion mt-auto">Consultar visita</a>
+                        </div>
+                    </article>
+                </div>
 
-                <p>
-                    Karian es la ciudad más grande y poblada de Orion,
-                    caracterizada por su ambiente urbano y su gran movimiento
-                    diario. Cuenta con numerosos edificios de gran altura,
-                    avenidas amplias, centros comerciales, restaurantes,
-                    hoteles y una gran variedad de negocios. La ciudad también
-                    posee importantes espacios culturales, plazas y lugares de
-                    entretenimiento que atraen tanto a los habitantes como a
-                    turistas. Durante el día sus calles se encuentran llenas
-                    de personas y vehículos, mientras que por la noche la
-                    ciudad continúa activa gracias a sus restaurantes, bares y
-                    diferentes propuestas de ocio. Por su gran cantidad de
-                    actividades y lugares para recorrer, Karian es uno de los
-                    principales destinos turísticos de Orion y el centro de la
-                    vida urbana de la región.
-                </p>
-
-            </article>
-
-
-            <article>
-                <h3>Pompeia</h3>
-
-                <p>
-                    Pompeia es una ciudad costera que cuenta con un clima
-                    templado y agradable durante todo el año, aunque mantiene
-                    sus distintas estaciones. Durante las temporadas altas se
-                    convierte en uno de los destinos más elegidos para
-                    vacacionar, haciendo que el turismo aumente
-                    considerablemente. Sus hermosas playas atraen a una gran
-                    cantidad de visitantes, que durante el día disfrutan del
-                    mar y de diferentes actividades al aire libre. Por la
-                    noche, la ciudad cobra vida con restaurantes, bares,
-                    fiestas y distintas propuestas de entretenimiento. Sin
-                    embargo, en determinadas épocas del año aumenta la
-                    presencia de vida marina cerca de la costa, por lo que
-                    ingresar al agua puede volverse peligroso y es necesario
-                    respetar las indicaciones de seguridad. A pesar de esto,
-                    Pompeia se destaca como un destino ideal para disfrutar de
-                    unas vacaciones con playa, buen clima y mucha actividad.
-                </p>
-
-            </article>
-
+            </div>
         </section>
-
     </main>
 
     <footer>
-        <p>Orion - Guía de ciudades y destinos</p>
+        <p>&copy; 2026 Municipalidad de Orión</p>
     </footer>
 
-</body>
+    <!-- script de bootstrap para que funcione el boton del menu -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
+    <!-- script propio del sitio -->
+    <script src="js/main.js"></script>
+</body>
 </html>
