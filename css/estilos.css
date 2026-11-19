@@ -507,7 +507,12 @@ body.oscuro #redes em {
 }
 
 
+/* Ciudad */
 
+.ficha dl dt, 
+.ficha dl dd {
+  font-size:0.8rem;
+}
 
 
 
