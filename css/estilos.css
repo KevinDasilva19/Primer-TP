@@ -375,6 +375,11 @@ section article li:last-child {
   border-bottom: none;
 }
 
+section article address {
+  font-style: normal;
+  margin-bottom: 0;
+}
+
 /* -- seccion id, seleccion de id. Redes sociales #redes -- */
 
 #redes {
