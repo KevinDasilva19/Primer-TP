@@ -55,3 +55,20 @@ if (buscadorLugares) {
     });
   });
 }
+
+// Seccion del INDEX
+// guardo el boton con el id
+const boton = document.getElementById("btn-modo");
+
+// Escucho el clic en el botón
+boton.addEventListener("click", () => {
+    // Agrega o quita la clase "oscuro" en el <body>
+    document.body.classList.toggle("oscuro");
+    // Cambia el texto del botón segun la clase que tenga el body
+    if (document.body.classList.contains("oscuro")) {
+        boton.textContent = "☀️ Modo claro";
+    } else {
+        boton.textContent = "🌙 Modo oscuro";
+    }
+});
+
