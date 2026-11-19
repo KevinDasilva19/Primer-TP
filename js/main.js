@@ -1,3 +1,11 @@
+// Ciudad
+const btnVerMas = document.querySelector('#btn-ver-mas');
+btnVerMas.addEventListener('click', () => {
+  const collapseElementList = document.querySelectorAll('.collapse')
+  const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+});
+
+
 const formulario = document.getElementById("form-contacto");
 
 // esta linea verifica que el formulario exista para que no de error
@@ -72,4 +80,5 @@ boton.addEventListener("click", () => {
         boton.textContent = "🌙 Modo oscuro";
     }
 });
+
 
